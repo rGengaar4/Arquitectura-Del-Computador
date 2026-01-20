@@ -1,0 +1,70 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{float}
+
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+}
+
+\title{\textbf{Configuración Final: Workstation Data Science \& BIG DATA}}
+\author{Presupuesto: \$3,000 USD}
+\date{Enero 2026}
+
+\begin{document}
+
+\maketitle
+
+\section{Resumen del Presupuesto}
+
+Esta configuración utiliza los componentes específicos seleccionados, optimizados para ofrecer la máxima velocidad de transferencia de datos y potencia de cálculo paralelo.
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabular}{@{}p{3cm} p{6.5cm} p{2cm} p{2.5cm}@{}}
+\toprule
+\textbf{Componente} & \textbf{Modelo Seleccionado} & \textbf{Precio} & \textbf{Tienda} \\ \midrule
+\textbf{CPU} & AMD Ryzen 9 7950X (16C/32T) & \$429 & \href{https://www.amazon.com/AMD-Ryzen-7950X-Processors-100-100000514WOF/dp/B0BBHD5D8Y}{Amazon} \\
+\textbf{GPU} & Gigabyte RTX 4080 Super Aero OC & \$999 & \href{https://www.newegg.com/gigabyte-gv-n408saero-oc-16gd-geforce-rtx-4080-super-16gb-graphics-card-triple-fans/p/N82E16814932670T}{Newegg} \\
+\textbf{RAM} & Crucial DDR5 6400MHz OC Kit & \$650 & \href{https://www.amazon.com/-/es/Crucial-6400MHz-Escritorio-Overclocking-Compatible/dp/B0DSR14511/}{Amazon} \\
+\textbf{Placa Base} & ASRock X870E Taichi & \$349 & \href{https://www.newegg.com/asrock-x870e-taichi-extended-atx-motherboard-amd-x870e-am5/p/N82E16813162161}{Newegg} \\
+\textbf{SSD} & Samsung 990 PRO 2TB NVMe & \$199 & \href{https://www.amazon.com/SAMSUNG-Internal-Expansion-MZ-V9P2T0B-AM/dp/B0BHJF2VRN}{Amazon} \\
+\textbf{Cooler} & Arctic Liquid Freezer III 360 & \$89 & \href{https://www.amazon.com/ARCTIC-Liquid-Freezer-III-360/dp/B0DLWGG85P}{Amazon} \\
+\textbf{Fuente} & Corsair RM1000e 1000W Gold & \$189 & \href{https://www.amazon.com/Corsair-RM1000e-Modular-Low-Noise-Supply/dp/B0BYQPH5J3}{Amazon} \\
+\textbf{Gabinete} & Corsair 4000D Airflow & \$99 & \href{https://www.amazon.com/Corsair-4000D-Airflow-Tempered-Mid-Tower/dp/B0DPJ9K8WK}{Amazon} \\ \midrule
+\textbf{Total} & & \textbf{\$3,000} & \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Justificación Técnica de la Selección}
+
+\subsection{Procesamiento: Ryzen 9 7950X y X870E Taichi}
+El procesador de 16 núcleos es el estándar para multitarea pesada. La elección de la placa \textbf{ASRock X870E Taichi} es excelente debido a su soporte nativo para \textbf{USB4 y PCIe 5.0}, lo que garantiza que las transferencias de datos desde unidades externas de Big Data no tengan cuello de botella.
+
+\subsection{Memoria y Aprendizaje Profundo}
+\begin{itemize}
+    \item \textbf{RAM Crucial 6400MHz:} La alta frecuencia de esta RAM reduce la latencia en la comunicación entre la CPU y los datos, acelerando el pre-procesamiento de datasets en memoria.
+    \item \textbf{Gigabyte RTX 4080 Super Aero OC:} Con 16GB de VRAM y núcleos Tensor de cuarta generación, es capaz de manejar modelos de lenguaje (LLMs) y visión computacional con gran eficiencia. El diseño Aero asegura una excelente gestión térmica.
+\end{itemize}
+
+\subsection{Almacenamiento y Estabilidad}
+El \textbf{Samsung 990 PRO} es fundamental para Big Data por su alta velocidad de lectura aleatoria, lo que reduce el tiempo de carga de miles de archivos pequeños (como imágenes para entrenamiento). Todo el sistema está respaldado por una fuente de \textbf{1000W}, necesaria para absorber los picos de consumo de la GPU y CPU trabajando al 100\%.
+
+\section{Notas de Montaje}
+Se ha incluido el \textbf{Arctic Liquid Freezer III}, uno de los mejores refrigeradores líquidos del mercado, esencial para evitar el \textit{thermal throttling} durante procesos de entrenamiento que puedan durar varias horas o días.
+\\
+
+estudiantes: Jesus Barrera 31530092, Tulio Cordero 30571603
+
+
+\end{document}
